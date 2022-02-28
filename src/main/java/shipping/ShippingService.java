@@ -31,8 +31,7 @@ public class ShippingService {
                 if (!result.containsKey(actual.getDestinationCountry())) {
                     result.put(actual.getDestinationCountry(), actualDistance);
                 } else {
-                    result.put(actual.getDestinationCountry(),
-                            result.get(actual.getDestinationCountry()) + actualDistance);
+                    result.put(actual.getDestinationCountry(), result.get(actual.getDestinationCountry()) + actualDistance);
                 }
             }
         }
